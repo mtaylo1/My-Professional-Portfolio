@@ -1,0 +1,47 @@
+/*UI Elements*/
+a {
+    color: #5C5F58;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*Header*/
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+}
+
+h1 {
+    color: #004e7c;
+    font-family: 'fugaz one'; 
+    font-size: 42px;
+    font-style: normal;
+}
+
+nav {
+
+
+}
+/*Body */ 
+
+ul li {
+    color: #5c5f58;
+    margin-right 25px;
+    display: inline-block;
+
+}
+
+/*Hero Content*/ 
+
+/*Footer*/
