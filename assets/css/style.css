@@ -1,8 +1,9 @@
 /*UI Elements*/
 a {
-    color: #B73225;
+    color: #030027;
     text-decoration: none;
     font-family: 'roboto';
+    
 }
 
 p {
@@ -16,6 +17,16 @@ p {
     
 }
 
+.avatar {
+    vertical-align: bottom;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    padding-top: 3px;
+
+
+}
+
 /*Header*/
 .header nav {
     padding-top: 15px;
@@ -25,27 +36,61 @@ p {
 }
 
 h1 {
-    color: #004e7c;
+    color: #00;
     font-family: 'fugaz one'; 
     font-size: 42px;
     font-style: normal;
+    text-align:center;
+    padding-right: 100px;
 }
 
 h2 {
-    color: #5c5f55;
+    color: #212540;
+    margin-top: 20px;
+    margin-bottom: 45px;
 }
 
 /*Body */ 
+.hero {
+    height: 460px;
+    width: 100%;
+    margin-top:45px;
+    margin-bottom: 25px;
+    background-image: url("../images/laptop-screen.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+/*Hero Section*/ 
 
 ul li {
     color: #5c5f58;
     margin-right: 25px;
-    display: inline-block;
+    display: block;
     padding-right: 20px;
-    list-style-type: none;
+    text-align:center;
+    border-bottom: 3px solid transparent;
     font-family: 'roboto';
+    overflow: hidden;
+    
 }
 
+li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    text-align: center;
+   
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    border-bottom: 3px solid #fa2e2c;
+  }
+  
 
 
 /*Hero Content*/ 
