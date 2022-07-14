@@ -17,145 +17,7 @@ p {
     font-family: 'roboto'; 
 }
 
-ul li {
-    padding-top: 5px;
-    padding-bottom: 10px;
-}
-
-.nav ul li {
-    margin-bottom: 20px;
-}
-
-li {
-    float: left;
-    text-align:right;
-    
-}
-  
-li a {
-    display: block;
-    text-decoration: none;
-}
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    border-bottom: 5px solid #1AD0E7;
-    
-}
-  
-
-/*Avatar (my picture)*/
-.avatar {
-    vertical-align: bottom;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    padding-top: 3px;
-}
-
 /*Header*/
-
-article {
-    font-family: 'roboto';
-    line-height: 23px;
-    margin-bottom: 20px;
-    text-align: left;
-    padding-right: 70px;
-    padding-left: 30px;
-    
-}
-
-.about-me {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.work {
-    display: flex;
-    flex-wrap: wrap;
-    
-    
-}
-
-.contact-me {
-    margin-bottom: 100px;
-    text-align: center;
-    
-    
-}
-
-
-.my-resume {
-    height: 100px;
-    margin-top:15px;
-    margin-bottom: 15px;
-    
-}
-
-
-/*My Work*/ 
-
-.led-wall:hover, .calculator:hover, .run-buddy:hover, .horiseon:hover {
-    opacity: 0.5;
-}
-
-
-.horiseon h3 {
-    height: 25px; 
-}
-
-
-.horiseon {
-    height: 400px;
-    border: 5px solid #030027;
-    padding: 150px 25px 25px 75px;
-    margin: 20px;
-    border-radius: 25px;
-    background-image: url("../images/horiseon.PNG");
-    background-size: 100% 100%;
-    width: 100%;
-    display: flex; 
-
-    
-
-}
-
-.calculator {
-    width: 100px;
-    height: 100px;
-    border: 5px solid #030027;
-    padding: 50px;
-    margin: 20px;
-    border-radius: 25px;
-    align-self: flex-end;
-    background-image: url("../images/calculator.PNG");
-    background-size: 100% 100%;
-}
-
-.run-buddy{
-    width: 100px;
-    height: 100px;
-    border: 5px solid #030027;
-    padding: 50px;
-    border-radius: 25px;
-    margin: 20px;
-    align-self: flex-end;
-    background-image: url("../images/run-buddy.PNG");
-    background-size: 100% 100%;
-        
-}
-
-.led-wall {
-    width: 100px;
-    height: 100px;
-    border: 5px solid #030027;
-    padding: 50px;
-    border-radius: 25px;
-    margin: 20px;
-    align-self: flex-end;
-    background-image: url("../images/led-wall.PNG");
-    background-size: 100% 100%;
-}
 
 .header nav {
     padding-top: 15px;
@@ -164,62 +26,23 @@ article {
     font-size: 20px;
 }
 
+/*Navigation and Links*/
 
-/*Headings*/ 
-h1 {
-    color: #00;
-    font-family: 'fugaz one'; 
-    font-size: 42px;
-    font-style: normal;
-    text-align: center;
-    padding-left: 50px;
-    margin-bottom: 5px;
-    
-    
+li {
+    float: left;
+    text-align:right;
 }
 
-h2 {
-    color: #212540;
-    font-size: 35px;
-    background-color: #1AD0E7;    
-    border-radius: 25px;
-    padding-left: 20px;
-    text-align: center;
-    
-
+li a {
+    display: block;
+    text-decoration: none;
 }
-
-h3 {
-    
-    background-color:#5c5f58;
-    padding: 0px;
-    text-align: center;
-    float: inline-end; 
-    width: 90px;
-    
-    position: relative; 
+  
+/*Allows Hover effect when mouse interacts with li element*/
+li a:hover {
+    border-bottom: 5px solid #1AD0E7;
 }
-
-h4 {
-    margin-top: 50px;
-    margin-bottom: -50px;
-}
-
-
-
-/*Body */ 
-.hero {
-    height: 460px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top:45px;
-    background-image: url("../images/laptop-screen.jpg");
-    background-size: cover;
-    background-position: center;
-
-}
-/*Hero Section*/ 
+  
 
 ul li {
     color: #5c5f58;
@@ -231,14 +54,159 @@ ul li {
     overflow: hidden;
     font-weight: bold;
     font-size: 20px;
-    width: auto;      
-    
+    width: auto;  
+    padding-top: 5px;
+    padding-bottom: 10px;    
 }
 
 
+.nav ul li {
+    margin-bottom: 20px;
+}
+
+/*Hero Section*/ 
+.hero {
+    height: 460px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("../images/laptop-screen.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
 
 
-/*Hero Content*/ 
+/*Headings*/ 
+h1 {
+    color: #00;
+    font-family: 'fugaz one'; 
+    font-size: 42px;
+    font-style: normal;
+    text-align: center;
+    padding-left: 50px;
+    margin-bottom: 5px;    
+}
+
+h2 {
+    color: #212540;
+    font-size: 35px;
+    background-color: #1AD0E7;    
+    border-radius: 25px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+h3 {
+    background-color:#5c5f58;
+    padding: 0px;
+    text-align: center;
+    float: inline-end; 
+    width: 90px;
+    position: relative; 
+}
+
+h4 {
+    margin-top: 50px;
+    margin-bottom: -50px;
+}
+
+
+/*Avatar (my picture)*/
+.avatar {
+    vertical-align: bottom;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    padding-top: 3px;
+}
+
+
+/*About Me Section*/
+article {
+    font-family: 'roboto';
+    line-height: 23px;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-right: 70px;
+    padding-left: 30px;
+    
+}
+
+.about-me, .work {
+    display:flex;
+}
+
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    border-top:#030027;
+}
+
+/*Work Section*/
+.work {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*My Work*/ 
+.led-wall:hover, .calculator:hover, .run-buddy:hover, .horiseon:hover {
+    opacity: 0.5;    
+}
+
+.horiseon h3 {
+    height: 25px; 
+    display: block;
+}
+
+.horiseon, .calculator, .run-buddy, .led-wall {
+    border: 5px solid #030027;
+    border-radius: 25px;
+    background-size: 100% 100%;
+    margin: 20px;
+}
+
+.calculator, .run-buddy, .led-wall {
+    width: 25px;
+    height: 25px;
+    padding: 150px;
+    align-self: flex-end;
+}
+
+.horiseon {
+    height: 400px;
+    width: 80%;
+    padding: 150px 25px 25px 75px;
+    background-image: url("../images/horiseon.PNG");
+    display: flex; 
+}
+
+.calculator {
+    background-image: url("../images/calculator.PNG");
+}
+
+.run-buddy{
+    background-image: url("../images/run-buddy.PNG");
+}
+
+.led-wall {
+    background-image: url("../images/led-wall.PNG");
+}
+
+
+/*Contact Me section*/
+.contact-me {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+/*My Resume*/
+
+.my-resume {
+    height: 100px;
+    margin-top:15px;
+    margin-bottom: 15px;  
+}
 
 /*Footer*/
 
@@ -247,10 +215,10 @@ footer {
     padding-top: 20px;
 }
 
+/*Making work section responsive @ 800px*/
+
 @media only screen and (max-width: 800px) {
     .horiseon .led-wall .calculator .run-buddy h3{    
-        
         flex-direction: column;
-        
     }
 }
