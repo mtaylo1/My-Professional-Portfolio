@@ -1,94 +1,120 @@
 /*UI Elements*/
 a {
     color: #030027;
-    text-decoration: none;
+    text-decoration: solid;
     font-family: 'roboto';
-    
 }
 
+
 p {
-    font-size: 16px;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 * {
     box-sizing: content-box;
-    
-    font-family: 'roboto';
+    flex-wrap: wrap;
+    font-family: 'roboto'; 
 }
 
+ul li {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.nav ul li {
+    margin-bottom: 20px;
+}
+
+li {
+    float: left;
+    text-align:right;
+    
+}
+  
+li a {
+    display: block;
+    text-decoration: none;
+}
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    border-bottom: 5px solid #1AD0E7;
+    
+}
+  
+
+/*Avatar (my picture)*/
 .avatar {
     vertical-align: bottom;
     width: 90px;
     height: 90px;
     border-radius: 50%;
     padding-top: 3px;
-
-
 }
 
 /*Header*/
 
-.work {
+article {
+    font-family: 'roboto';
+    line-height: 23px;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-right: 70px;
+    padding-left: 30px;
+    
+}
+
+.about-me {
     display: flex;
     flex-wrap: wrap;
 }
 
-.contact-me {
-    margin-bottom: 60px;
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    
+    
 }
+
+.contact-me {
+    margin-bottom: 100px;
+    text-align: center;
+    
+    
+}
+
 
 .my-resume {
-    margin-top:50px;
+    height: 100px;
+    margin-top:15px;
+    margin-bottom: 15px;
     
 }
 
-.about-me .contact-me .my-resume .work {
 
-    margin-top: 50px;
-    
-      
+/*My Work*/ 
 
-}
-
-.horiseon .calculator .run-buddy .led-wall{
-    display: grid;
-    border-radius: 25px;
-    border: 15px solid #3C3B3F;
-    box-sizing: border-box;
-    
-}
-
-.horiseon .calculator .run-buddy .led-wall:hover {
-    background-color:#5c5f58;
-    
-
-}
-
-.led-wall:hover {
+.led-wall:hover, .calculator:hover, .run-buddy:hover, .horiseon:hover {
     opacity: 0.5;
 }
 
-.calculator:hover{
-    opacity: 0.5;
+
+.horiseon h3 {
+    height: 25px; 
 }
 
-.horiseon:hover {
-    opacity: 0.5;
-}
 
-.run-buddy:hover {
-    opacity: 0.5;
-}
 .horiseon {
-    width: 400px;
     height: 400px;
-    border: 15px solid #3C3B3F;
-    padding: 50px 25px 25px 75px;
+    border: 5px solid #030027;
+    padding: 150px 25px 25px 75px;
     margin: 20px;
     border-radius: 25px;
     background-image: url("../images/horiseon.PNG");
     background-size: 100% 100%;
-    
+    width: 100%;
+    display: flex; 
 
     
 
@@ -97,7 +123,7 @@ p {
 .calculator {
     width: 100px;
     height: 100px;
-    border: 5px solid #3C3B3F;
+    border: 5px solid #030027;
     padding: 50px;
     margin: 20px;
     border-radius: 25px;
@@ -109,20 +135,20 @@ p {
 .run-buddy{
     width: 100px;
     height: 100px;
-    border: 5px solid #3C3B3F;
+    border: 5px solid #030027;
     padding: 50px;
     border-radius: 25px;
     margin: 20px;
     align-self: flex-end;
     background-image: url("../images/run-buddy.PNG");
     background-size: 100% 100%;
-    
+        
 }
 
 .led-wall {
     width: 100px;
     height: 100px;
-    border: 5px solid #3C3B3F;
+    border: 5px solid #030027;
     padding: 50px;
     border-radius: 25px;
     margin: 20px;
@@ -138,6 +164,8 @@ p {
     font-size: 20px;
 }
 
+
+/*Headings*/ 
 h1 {
     color: #00;
     font-family: 'fugaz one'; 
@@ -152,7 +180,12 @@ h1 {
 
 h2 {
     color: #212540;
-
+    font-size: 35px;
+    background-color: #1AD0E7;    
+    border-radius: 25px;
+    padding-left: 20px;
+    text-align: center;
+    
 
 }
 
@@ -162,17 +195,16 @@ h3 {
     padding: 0px;
     text-align: center;
     float: inline-end; 
-    width: 105px;
-    padding: 0px 25 25 25;
-    position: relative; 
-
+    width: 90px;
     
+    position: relative; 
 }
 
-h3 span:hover {
-    background-color: #3B5249;
-    color: #fff;
+h4 {
+    margin-top: 50px;
+    margin-bottom: -50px;
 }
+
 
 
 /*Body */ 
@@ -199,30 +231,21 @@ ul li {
     overflow: hidden;
     font-weight: bold;
     font-size: 20px;
+    width: auto;      
     
 }
 
-li {
-    float: left;
-    text-align:right;
-  }
-  
-  li a {
-    display: block;
-    
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    border-bottom: 3px solid #fa2e2c;
-  }
-  
+
 
 
 /*Hero Content*/ 
 
 /*Footer*/
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+}
 
 @media only screen and (max-width: 800px) {
     .horiseon .led-wall .calculator .run-buddy h3{    
