@@ -170,7 +170,7 @@ article {
     width: 25px;
     height: 25px;
     padding: 150px;
-    align-self: flex-end;
+    align-self:flex-start;
 }
 
 .horiseon {
